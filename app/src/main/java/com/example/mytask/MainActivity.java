@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements ImageDataAdapter.
 //                // loadNextDataFromApi(page);
 //                isLoading = true;
 //                currentPage = currentPage + 1;
-//                getImages(currentPage);
+//                getImagesFromDatabase(currentPage);
 //
 //            }
 //        };

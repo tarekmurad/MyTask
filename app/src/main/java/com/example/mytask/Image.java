@@ -3,14 +3,21 @@ package com.example.mytask;
 import android.widget.ImageView;
 
 import androidx.databinding.BindingAdapter;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.example.mytask.R;
 import com.google.gson.annotations.SerializedName;
 
+@Entity(tableName = "Image")
 public class Image {
 
+    @PrimaryKey(autoGenerate = true)
+    public int uid;
+
+    @ColumnInfo(name = "largeImageURL")
     @SerializedName("largeImageURL")
     private String largeImageURL;
 

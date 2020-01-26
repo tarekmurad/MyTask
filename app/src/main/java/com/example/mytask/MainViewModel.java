@@ -22,7 +22,7 @@ public class MainViewModel extends AndroidViewModel implements ViewModelProvider
 
     public MainViewModel(@NonNull Application application,  Context context) {
         super(application);
-        ImageRepository = new ImageRepository();
+        ImageRepository = new ImageRepository(context);
         mApplication = application;
         mContext = context;
 
